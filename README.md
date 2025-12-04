@@ -6,4 +6,9 @@
 - Added hex key validation method
 
   
- 
+ Implemented file encryption feature
+- Added encryptFile method with file reading/writing
+- Generated random AES keys for each encryption
+- Displayed hex key to user for saving
+- Created ciphertext.txt output file
+- Added bytesToHex helper method
