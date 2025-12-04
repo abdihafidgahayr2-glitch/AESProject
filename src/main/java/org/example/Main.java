@@ -1,5 +1,4 @@
 package org.example;
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
@@ -11,9 +10,10 @@ import java.util.Scanner;
 
 public class Main {
 
+
     private static String lastGeneratedKey = "";
 
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("AES FILE ENCRYPTION SYSTEM");
@@ -42,8 +42,10 @@ public class Main {
             }
         }
     }
+
     private static void encryptFile(Scanner scanner) {
         try {
+
             System.out.println("\n=== FILE ENCRYPTION ===");
             System.out.print("Enter filename to encrypt: ");
             String filename = scanner.nextLine().trim();
@@ -91,12 +93,13 @@ public class Main {
             System.out.println("\nIMPORTANT: Save this key for decryption!");
             System.out.println("=".repeat(40));
 
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             System.out.println("Encryption failed: " + e.getMessage());
         }
-
     }
-    // Helper method: Convert bytes to hex string
+    //Convert bytes to hex string
     private static String bytesToHex(byte[] bytes) {
         StringBuilder hex = new StringBuilder();
         for (byte b : bytes) {
@@ -104,4 +107,6 @@ public class Main {
         }
         return hex.toString();
     }
+
+
 }
