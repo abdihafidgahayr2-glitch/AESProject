@@ -1,3 +1,2 @@
-This is a test file for AES encryption.
-Student ID: D00234567
-CA2 Assignment - AES Implementation
+Hi my name Abdihafid.
+I like to play fotball on my free time.
